@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>weather</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>WeatherInfo</h1>
+    </div>
+    <div class="report">
+        <form action="" method="post">
+            <label>Enter the name of the city: </label>
+            <input type="text" placeholder="Enter the name of the city" name="city" id="">
+            <h2>Or</h2>
+            <label for="zipcode">Enter the Zipcode: </label>
+            <input type="text" name="zipcode" placeholder="Enter the zipcode " id="">
+            <h2>Or</h2>
+            <label for="lattitude">Enter the lattitude: </label>
+            <input type="text" name="lattitude" placeholder="Enter the lattitude " id="">
+            <hr>
+            <label for="longitude">Enter the longitude: </label>
+            <input type="text" name="longitude" placeholder="Enter the longitude " id="">
+            <hr>
+            <button type="submit">Get WeatherInfo</button>
+        </form>
+    </div>
+    <div class="result">
+        <h2>Weather Information</h2>
+        <div class="temp res">
+            <label >Temparature: </label>
+            <label class="temparature">in celcius</label>
+        </div>
+        <div class="descrip res">
+            <label >Description: </label>
+            <label class="description">about clouds</label>
+        </div>
+        <div class="pres res">
+            <label >Pressure: </label>
+            <label class="pressure">in atm</label>
+        </div>
+        <div class="speed res">
+            <label >Wind speed: </label>
+            <label class="windspeed">in m/s</label>
+        </div>
+    </div>
+    <div class="footer">
+        <div>About us</div>
+        <div>Contact us</div>
+        <div>Donate</div>
+        <div>Enquire</div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
