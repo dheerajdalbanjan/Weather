@@ -23,8 +23,8 @@ app.post("/" , function(req , res){
             const windspeed = weatherData.wind.speed;
             const icon = weatherData.weather[0].icon ;
             const url = "https://openweathermap.org/img/wn" + icon + "@2x.png";
-            res.send("<h1>The temparature  is " + temp + "</h1>" + "<h1>The Description is " + description + "</h1>"
-            + "<h1>The pressure is " + pressure + "</h1>" + "<h1>The windspeed is " + windspeed + "</h1>" +
+            res.send("<h2>The temparature  is " + temp + "</h2>" + "<h2>The Description is " + description + "</h2>"
+            + "<h2>The pressure is " + pressure + "</h2>" + "<h2>The windspeed is " + windspeed + "</h2>" +
             "<img src = " + url + ">");
     })
     })
@@ -41,8 +41,8 @@ app.post("/" , function(req , res){
             const windspeed = weatherData.wind.speed;
             const icon = weatherData.weather[0].icon ;
             const url = "https://openweathermap.org/img/wn" + icon + "@2x.png";
-            res.send("<h1>The temparature  is " + temp + "</h1>" + "<h1>The Description is " + description + "</h1>"
-            + "<h1>The pressure is " + pressure + "</h1>" + "<h1>The windspeed is " + windspeed + "</h1>" +
+            res.send("<h2>The temparature  is " + temp + "</h2>" + "<h2>The Description is " + description + "</h2>"
+            + "<h2>The pressure is " + pressure + "</h2>" + "<h2>The windspeed is " + windspeed + "</h2>" +
             "<img src = " + url + ">");
         })
     })
@@ -61,8 +61,8 @@ app.post("/" , function(req , res){
                 const windspeed = weatherData.wind.speed;
                 const icon = weatherData.weather[0].icon ;
                 const url = "https://openweathermap.org/img/wn" + icon + "@2x.png";
-                res.send("<h1>The temparature  is " + temp + "</h1>" + "<h1>The Description is " + description + "</h1>"
-                + "<h1>The pressure is " + pressure + "</h1>" + "<h1>The windspeed is " + windspeed + "</h1>" +
+                res.send("<h2>The temparature  is " + temp + "</h2>" + "<h2>The Description is " + description + "</h2>"
+                + "<h2>The pressure is " + pressure + "</h2>" + "<h2>The windspeed is " + windspeed + "</h2>" +
                 "<img src = " + url + ">");
             })
         })
