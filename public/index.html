@@ -6,63 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>weather</title>
 </head>
 
 <body>
-    <div class="navbar fixed top-0 right-0 left-0 bg-slate-800 mx-auto py-4 text-xl text-white text-center md:text-3xl ">
+    <div
+        class="navbar fixed top-0 right-0 left-0 bg-slate-800 backdrop-blur-lg backdrop-opacity-20 mx-auto py-4 text-xl text-white text-center md:text-3xl ">
         <h1>WeatherInfo</h1>
     </div>
-    <div class="report py-32 px ">
+    <div class="report py-20  md:py-32">
         <form action="" method="post">
-            <div class="flex flex-col space-y-4 mx-10 text-xl text-gray-900 px-4 py-3 justify-center align-middle rounded shadow-lg">
-                <div class="">
-                <label>Enter the name of the city: </label>
-                <input class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-3" type="text" placeholder="Enter the name of the city" name="city" id="">
+            <div
+                class="flex flex-col space-y-5 mx-4 md:mx-10 text-xl text-gray-900 px-4 py-3 justify-center align-middle rounded shadow-lg">
+                <div class="flex flex-col space-y-4">
+                    <div><label>Enter the name of the city: </label></div>
+                    <div><input
+                            class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3"
+                            type="text" placeholder="Enter the name of the city" name="city" id=""></div>
                 </div>
                 <div class="">
-                <h2>Or</h2>
-                <label for="zipcode">Enter the Zipcode: </label>
-                <input class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-3" type="text" name="zipcode" placeholder="Enter the zipcode " id="">
+                    <h2>Or</h2>
+                    <div class="flex flex-col space-y-4">
+                        <div><label>Enter the zipcode: </label></div>
+                        <div><input
+                                class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3"
+                                type="text" placeholder="Enter the zipcode" name="zipcode" id=""></div>
+                    </div>
                 </div>
                 <div class="">
-                <h2>Or</h2>
-                <label for="lattitude">Enter the lattitude: </label>
-                <input class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-3" type="text" name="lattitude" placeholder="Enter the lattitude " id="">
+                    <h2>Or</h2>
+                    <div class="flex flex-col space-y-4">
+                        <div><label>Enter the latitude: </label></div>
+                        <div><input class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3" type="text" placeholder="Enter the latitude" name="lattitude" id=""></div>
+                    </div>
                 </div>
                 <div class="">
-                <label for="longitude">Enter the longitude: </label>
-                <input class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-3" type="text" name="longitude" placeholder="Enter the longitude " id="">
+                    <div class="flex flex-col space-y-4">
+                        <div><label>Enter the longitude: </label></div>
+                        <div><input class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3" type="text" placeholder="Enter the longitude" name="longitude" id=""></div>
+                    </div>
                 </div>
-                <div >
-                <button class="bg-black my-4 text-white rounded px-2 py-2 hover:bg-slate-900" type="submit">Get WeatherInfo</button>
+                <div>
+                    <button class="bg-black my-4 text-white rounded px-2 py-2 hover:bg-slate-900" type="submit">Get
+                        WeatherInfo</button>
                 </div>
             </div>
-    </form>
+        </form>
     </div>
-    <div class="result flex flex-col space-y-4 text-xl mx-10">
-        <h2 class="text-3xl text-blue-900 mb-6">Weather Information</h2>
-        <div class="flex flex-col space-y-3 rounded shadow-xl px-7 py-4 mx-auto ml-0">
-        <div class="temp res">
-            <label>Temparature: </label>
-            <label class="temparature">in celcius</label>
-        </div>
-        <div class="descrip res">
-            <label>Description: </label>
-            <label class="description">about clouds</label>
-        </div>
-        <div class="pres res">
-            <label>Pressure: </label>
-            <label class="pressure">in atm</label>
-        </div>
-        <div class="speed res">
-            <label>Wind speed: </label>
-            <label class="windspeed">in m/s</label>
-        </div>
+    <div class="result flex flex-col mb-10 space-y-4 text-xl mx-4 md:mx-10">
+        <h2 class="text-2xl md:text-3xl text-blue-900 mb-6 mx-1 text-center md:text-left">Weather Information</h2>
+        <div class="flex flex-col space-y-3 rounded shadow-xl px-7 py-4  ml-0">
+            <div class="temp res">
+                <label>Temparature: </label>
+                <label class="temparature">in celcius</label>
+            </div>
+            <div class="descrip res">
+                <label>Description: </label>
+                <label class="description">about clouds</label>
+            </div>
+            <div class="pres res">
+                <label>Pressure: </label>
+                <label class="pressure">in atm</label>
+            </div>
+            <div class="speed res">
+                <label>Wind speed: </label>
+                <label class="windspeed">in m/s</label>
+            </div>
         </div>
     </div>
-    <div class="footer flex flex-row justify-end space-x-3 px-20  my-7  items-end">
+    <div class="footer flex flex-row md:justify-end space-x-2 md:space-x-3 px-10 justify-between md:px-20  my-7  items-end">
         <div class="hover:underline underline-offset-2 hover:cursor-pointer">About us</div>
         <div class="hover:underline underline-offset-2 hover:cursor-pointer">Contact us</div>
         <div class="hover:underline underline-offset-2 hover:cursor-pointer">Donate</div>
