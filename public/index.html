@@ -11,51 +11,51 @@
 
 <body>
     <div
-        class="navbar fixed top-0 right-0 left-0 bg-slate-800 backdrop-blur-lg backdrop-opacity-20 mx-auto py-4 text-xl text-white text-center md:text-3xl ">
+        class="navbar fixed top-0 right-0 left-0 bg-black filter  opacity-75    mx-auto py-4 text-xl text-orange-500 font-bold font-mono text-center md:text-3xl ">
         <h1>WeatherInfo</h1>
     </div>
     <div class="report py-20  md:py-32">
         <form action="" method="post">
             <div
                 class="flex flex-col space-y-5 mx-4 md:mx-10 text-xl text-gray-900 px-4 py-3 justify-center align-middle rounded shadow-lg">
-                <div class="flex flex-col space-y-4">
+                <div class="flex flex-col space-y-4 md:flex-row md:space-x-3 md:space-y-0">
                     <div><label>Enter the name of the city: </label></div>
                     <div><input
-                            class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3"
+                            class="px-2 py-1.5 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3"
                             type="text" placeholder="Enter the name of the city" name="city" id=""></div>
                 </div>
                 <div class="">
                     <h2>Or</h2>
-                    <div class="flex flex-col space-y-4">
+                    <div class="flex flex-col space-y-4 md:flex-row md:space-x-3 md:space-y-0">
                         <div><label>Enter the zipcode: </label></div>
                         <div><input
-                                class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3"
+                                class="px-2 py-1.5 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3"
                                 type="text" placeholder="Enter the zipcode" name="zipcode" id=""></div>
                     </div>
                 </div>
                 <div class="">
                     <h2>Or</h2>
-                    <div class="flex flex-col space-y-4">
+                    <div class="flex flex-col space-y-4 md:flex-row md:space-x-3 md:space-y-0">
                         <div><label>Enter the latitude: </label></div>
-                        <div><input class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3" type="text" placeholder="Enter the latitude" name="lattitude" id=""></div>
+                        <div><input class="px-2 py-1.5 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3" type="text" placeholder="Enter the latitude" name="lattitude" id=""></div>
                     </div>
                 </div>
                 <div class="">
-                    <div class="flex flex-col space-y-4">
+                    <div class="flex flex-col space-y-4 md:flex-row md:space-x-3 md:space-y-0">
                         <div><label>Enter the longitude: </label></div>
-                        <div><input class="px-2 py-2 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3" type="text" placeholder="Enter the longitude" name="longitude" id=""></div>
+                        <div><input class="px-2 py-1.5 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3" type="text" placeholder="Enter the longitude" name="longitude" id=""></div>
                     </div>
                 </div>
                 <div>
-                    <button class="bg-black my-4 text-white rounded px-2 py-2 hover:bg-slate-900" type="submit">Get
+                    <button class="bg-black my-4 text-white rounded px-2 py-2 hover:bg-slate-900 hover:px-2.5 hover:py-2.5 transition-all hover:rounded-sm" type="submit">Get
                         WeatherInfo</button>
                 </div>
             </div>
         </form>
     </div>
-    <div class="result flex flex-col mb-10 space-y-4 text-xl mx-4 md:mx-10">
-        <h2 class="text-2xl md:text-3xl text-blue-900 mb-6 mx-1 text-center md:text-left">Weather Information</h2>
-        <div class="flex flex-col space-y-3 rounded shadow-xl px-7 py-4  ml-0">
+    <div class="result flex flex-col mb-16 space-y-4 text-xl mx-4 md:mx-10 ">
+        <h2 class="text-2xl md:text-3xl text-black font-semibold mb-6 mx-1 text-left">Weather Information</h2>
+        <div class="flex flex-col space-y-3 px-2 py-4  ml-0">
             <div class="temp res">
                 <label>Temparature: </label>
                 <label class="temparature">in celcius</label>
@@ -74,7 +74,7 @@
             </div>
         </div>
     </div>
-    <div class="footer flex flex-row md:justify-end space-x-2 md:space-x-3 px-10 justify-between md:px-20  my-7  items-end">
+    <div class="footer flex flex-row md:justify-end space-x-2 md:space-x-3 px-10 justify-between md:px-20 mb-6 mt-0 md:my-7  items-end">
         <div class="hover:underline underline-offset-2 hover:cursor-pointer">About us</div>
         <div class="hover:underline underline-offset-2 hover:cursor-pointer">Contact us</div>
         <div class="hover:underline underline-offset-2 hover:cursor-pointer">Donate</div>
