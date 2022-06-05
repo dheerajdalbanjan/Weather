@@ -25,7 +25,7 @@ app.post("/" , function(req , res){
             const url = "https://openweathermap.org/img/wn" + icon + "@2x.png";
             res.send("<h2>The temparature  is " + temp + "</h2>" + "<h2>The Description is " + description + "</h2>"
             + "<h2>The pressure is " + pressure + "</h2>" + "<h2>The windspeed is " + windspeed + "</h2>" +
-            "<img src = " + url + ">");
+            "<img src =  " + " + url + " + ">");
     })
     })
 }

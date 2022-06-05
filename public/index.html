@@ -11,9 +11,33 @@
 
 <body>
     <div
-        class="navbar fixed top-0 right-0 left-0 bg-black filter backdrop-blur-lg backdrop-opacity-70 opacity-80 mx-auto py-4 text-xl text-orange-500 font-bold font-mono text-center md:text-3xl ">
-        <h1>WeatherInfo</h1>
+        class="navbar  fixed flex flex-row justify-start space-x-9 top-0 right-0 left-0 bg-black  mx-auto py-4 text-xl text-orange-500 font-bold font-mono text-center md:text-3xl ">
+        <div class="flex flex-row space-x-2 order-1">
+            <div
+                class="hamburger transition-all flex z-10 flex-col space-y-1 justify-center align-middle mx-4 border-solid border-2 border-gray-700 px-2 rounded-sm ">
+                <div class="first relative  transition-all w-5 h-0.5 bg-white"></div>
+                <div class="sec relative transition-all w-5 h-0.5 bg-white"></div>
+                <div class="third relative  transition-all a w-5 h-0.5 bg-white"></div>
+            </div>
+            <div
+                class="window  -translate-x-96 transition-all flex flex-col md:text-lg fixed left-0 top-0 font-thin  bg-black filter opacity-80 text-white h-full py-16 font-mono px-5 md:py-16 md:px-12">
+                <div class="cursor-pointer  transition-all w-36 py-3 px-2 md:py-4 md:px-4 hover:text-gray-400">Home
+                </div>
+                <div class="cursor-pointer  transition-all w-36 py-3 px-2 md:py-4 md:px-4 hover:text-gray-400">About us
+                </div>
+                <div class="cursor-pointer  transition-all w-36 py-3 px-2 md:py-4 md:px-4 hover:text-gray-400">Contact
+                    us</div>
+                <div class="cursor-pointer  transition-all w-36 py-3 px-2 md:py-4 md:px-4 hover:text-gray-400">Donate
+                </div>
+                <div class="cursor-pointer  transition-all w-36 py-3 px-2 md:py-4 md:px-4 hover:text-gray-400">Support
+                </div>
+            </div>
+        </div>
+        <div class="order-2 px-8 md:px-0">
+            <h1>WeatherInfo</h1>
+        </div>
     </div>
+
     <div class="report py-20  md:py-32">
         <form action="" method="post">
             <div
@@ -37,17 +61,23 @@
                     <h2>Or</h2>
                     <div class="flex flex-col space-y-4 md:flex-row md:space-x-3 md:space-y-0">
                         <div><label>Enter the latitude: </label></div>
-                        <div><input class="px-2 py-1.5 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3" type="text" placeholder="Enter the latitude" name="lattitude" id=""></div>
+                        <div><input
+                                class="px-2 py-1.5 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3"
+                                type="text" placeholder="Enter the latitude" name="lattitude" id=""></div>
                     </div>
                 </div>
                 <div class="">
                     <div class="flex flex-col space-y-4 md:flex-row md:space-x-3 md:space-y-0">
                         <div><label>Enter the longitude: </label></div>
-                        <div><input class="px-2 py-1.5 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3" type="text" placeholder="Enter the longitude" name="longitude" id=""></div>
+                        <div><input
+                                class="px-2 py-1.5 border-2 rounded text-sm  active:outline-offset-2 active:outline-slate-600 focus:outline-3 focus:outline-offset-2 focus:outline-gray-500 mx-1 md:mx-3"
+                                type="text" placeholder="Enter the longitude" name="longitude" id=""></div>
                     </div>
                 </div>
                 <div>
-                    <button class="bg-black my-4 text-white rounded px-2 py-2 hover:bg-slate-900 hover:px-2.5 hover:py-2.5 transition-all hover:rounded-sm" type="submit">Get
+                    <button
+                        class="bg-black my-4 text-white rounded px-2 py-2 hover:bg-slate-900 hover:px-2.5 hover:py-2.5 transition-all hover:rounded-sm"
+                        type="submit">Get
                         WeatherInfo</button>
                 </div>
             </div>
@@ -55,27 +85,34 @@
     </div>
     <div class="result  flex flex-col mb-16 space-y-4 text-xl mx-4 md:mx-10 rounded-md shadow-xl w-fit px-5 py-5">
         <div class="relative">
-        <h2 class="text-2xl md:text-3xl text-black font-semibold mb-6 mx-1 text-left">Weather Information</h2>
-        <div class="absolute bg-red-400 filter blur-lg opacity-50  left-5 h-28 w-28 rounded-full mix-blend-multiply"></div>
-        <div class="absolute bg-yellow-400 filter blur-lg opacity-50 left-28 h-28 w-28 rounded-full mix-blend-multiply"></div>
-        <div class="absolute bg-blue-600  filter blur-lg opacity-50 top-28  left-16 h-28 w-28 rounded-full mix-blend-multiply"></div>
-        <div class=" flex flex-col space-y-3 px-2 py-4  ml-0">
-            <div class="temp res">
-                Temparature : In celsius 
+            <h2 class="text-2xl md:text-3xl text-black font-semibold mb-6 mx-1 text-left">Weather Information</h2>
+            <div
+                class="absolute bg-red-400 filter blur-lg opacity-50  left-5 h-28 w-28 rounded-full mix-blend-multiply">
             </div>
-            <div class="descrip res">
-                Description : About clouds
+            <div
+                class="absolute bg-yellow-400 filter blur-lg opacity-50 left-28 h-28 w-28 rounded-full mix-blend-multiply">
             </div>
-            <div class="pres res">
-                Pressure : In atm 
+            <div
+                class="absolute bg-blue-600  filter blur-lg opacity-50 top-28  left-16 h-28 w-28 rounded-full mix-blend-multiply">
             </div>
-            <div class="speed res">
-                Wind speed : in m/s 
+            <div class=" flex flex-col space-y-3 px-2 py-4  ml-0">
+                <div class="temp res">
+                    Temparature : In celsius
+                </div>
+                <div class="descrip res">
+                    Description : About clouds
+                </div>
+                <div class="pres res">
+                    Pressure : In atm
+                </div>
+                <div class="speed res">
+                    Wind speed : in m/s
+                </div>
             </div>
-        </div>
         </div>
     </div>
-    <div class="footer flex flex-row md:justify-end space-x-2 md:space-x-3 px-10 justify-between md:px-20 mb-6 mt-0 md:my-7  items-end">
+    <div
+        class="footer flex flex-row md:justify-end space-x-2 md:space-x-3 px-10 justify-between md:px-20 mb-6 mt-0 md:my-7  items-end">
         <div class="hover:underline underline-offset-2 hover:cursor-pointer">About us</div>
         <div class="hover:underline underline-offset-2 hover:cursor-pointer">Contact us</div>
         <div class="hover:underline underline-offset-2 hover:cursor-pointer">Donate</div>
