@@ -880,8 +880,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.8;
 }
 
-.opacity-50 {
-  opacity: 0.5;
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .mix-blend-multiply {
