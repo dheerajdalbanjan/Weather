@@ -11,7 +11,7 @@
 
 <body>
     <div
-        class="navbar fixed top-0 right-0 left-0 bg-black filter  opacity-75    mx-auto py-4 text-xl text-orange-500 font-bold font-mono text-center md:text-3xl ">
+        class="navbar fixed top-0 right-0 left-0 bg-black filter backdrop-blur-lg backdrop-opacity-70 opacity-80 mx-auto py-4 text-xl text-orange-500 font-bold font-mono text-center md:text-3xl ">
         <h1>WeatherInfo</h1>
     </div>
     <div class="report py-20  md:py-32">
@@ -53,25 +53,26 @@
             </div>
         </form>
     </div>
-    <div class="result flex flex-col mb-16 space-y-4 text-xl mx-4 md:mx-10 ">
+    <div class="result  flex flex-col mb-16 space-y-4 text-xl mx-4 md:mx-10 rounded-md shadow-xl w-fit px-5 py-5">
+        <div class="relative">
         <h2 class="text-2xl md:text-3xl text-black font-semibold mb-6 mx-1 text-left">Weather Information</h2>
-        <div class="flex flex-col space-y-3 px-2 py-4  ml-0">
+        <div class="absolute bg-red-400 filter blur-lg opacity-50  left-5 h-28 w-28 rounded-full mix-blend-multiply"></div>
+        <div class="absolute bg-yellow-400 filter blur-lg opacity-50 left-28 h-28 w-28 rounded-full mix-blend-multiply"></div>
+        <div class="absolute bg-blue-600  filter blur-lg opacity-50 top-28  left-16 h-28 w-28 rounded-full mix-blend-multiply"></div>
+        <div class=" flex flex-col space-y-3 px-2 py-4  ml-0">
             <div class="temp res">
-                <label>Temparature: </label>
-                <label class="temparature">in celcius</label>
+                Temparature : In celsius 
             </div>
             <div class="descrip res">
-                <label>Description: </label>
-                <label class="description">about clouds</label>
+                Description : About clouds
             </div>
             <div class="pres res">
-                <label>Pressure: </label>
-                <label class="pressure">in atm</label>
+                Pressure : In atm 
             </div>
             <div class="speed res">
-                <label>Wind speed: </label>
-                <label class="windspeed">in m/s</label>
+                Wind speed : in m/s 
             </div>
+        </div>
         </div>
     </div>
     <div class="footer flex flex-row md:justify-end space-x-2 md:space-x-3 px-10 justify-between md:px-20 mb-6 mt-0 md:my-7  items-end">
