@@ -2,6 +2,7 @@ console.log("javascript working");
 
 document.querySelector(".hamburger").addEventListener("click" , function(){
     document.querySelector(".window").classList.toggle("-translate-x-2");
+    document.querySelector(".window").classList.toggle("w-full");
     document.querySelector(".first").classList.toggle("rotate-45");
     document.querySelector(".first").classList.toggle("top-0.5");
     document.querySelector(".sec").classList.toggle("hidden");
