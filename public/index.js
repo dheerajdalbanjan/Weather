@@ -48,6 +48,8 @@ document.querySelector(".hamburger").addEventListener("click",function(){
     menu.classList.toggle("ml-0");
     main.classList.toggle("ml-52");
     document.querySelector(".logo-burger").classList.toggle("mx-52");
+    document.querySelector(".hamburger").classList.toggle("ring-4");
+    document.querySelector(".hamburger").classList.toggle("ring-blue-400");
     document.querySelector(".first").classList.toggle("rotate-45");
     document.querySelector(".first").classList.toggle("top-0.5");
     document.querySelector(".sec").classList.toggle("hidden");
